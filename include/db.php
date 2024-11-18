@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'cantina_db';
 $username = 'root';
-$password = 'Adn@1984';
+$password = '1234';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
