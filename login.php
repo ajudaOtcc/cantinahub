@@ -30,21 +30,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container mt-5">
-    <h2 class="text-center">Login</h2>
+<h2 class="text-center" style="margin-top: 50px;">Login</h2>
+<div class="container mt-5" style="margin-left:450px; ">
+    
     <form action="login.php" method="post" class="form-signin">
         <?php if (isset($error)): ?>
             <div class="alert alert-danger"><?= $error ?></div>
         <?php endif; ?>
-        <div class="form-group">
+        <div class="form-group" style="width: 500px;">
             <label>Nome de Usuário</label>
             <input type="text" name="nome" class="form-control" required>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="width: 500px;">
             <label>Senha</label>
             <input type="password" name="senha" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary btn-block" style="background-color: #38686a;">Entrar</button>
+       
+        <button type="submit" class="btn btn-primary btn-block" style="background-color: #38686a;width: 500px;">Entrar</button>
     </form>
 </div>
 </body>
